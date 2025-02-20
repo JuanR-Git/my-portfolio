@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="navbar header">
+
+  <a class="navbar-brand" href="#home-anchor">
+
+    <!-- This will be the website logo -->
+    <img src=""/>
+    <span>
+      Juan Reyes
+    </span>
+  </a>
+ 
+  <div class="theme-control">  <!-- This aligns the these to the left-->
+    @if (this.themeService.themeSignal() === "dark-mode") {
+    <button (click)="toggleTheme()"><span class="material-symbols-outlined"> dark_mode </span></button>
+    } @else {
+    <button (click)="toggleTheme()"><span class="material-symbols-outlined"> wb_sunny </span></button>
+    }
+  </div>
+</div>

@@ -1,17 +1,19 @@
-<!-- Nav Bar -->
-<app-header></app-header>
+<div [ngClass]="themeService.themeSignal()">
+  <!-- Nav Bar -->
+  <app-header></app-header>
 
-<!-- Hero Component -->
-<app-hero></app-hero>
+  <!-- Hero Component -->
+  <app-hero></app-hero>
 
-<!-- About me Component-->
-<app-about-me></app-about-me>
+  <!-- About me Component-->
+  <app-about-me></app-about-me>
 
-<!-- Experience Component-->
-<app-experience></app-experience>
+  <!-- Experience Component-->
+  <app-experience></app-experience>
 
-<!-- Projects Component -->
-<app-projects></app-projects>
+  <!-- Projects Component -->
+  <app-projects></app-projects>
 
-<!-- Footer -->
-<app-footer></app-footer>
+  <!-- Footer -->
+  <app-footer></app-footer>
+</div>
