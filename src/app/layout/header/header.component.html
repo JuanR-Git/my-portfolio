@@ -1,19 +1,61 @@
-<div class="navbar header">
-
+<div class="navbar navbar-expand-lg header fixed-top">
+  
   <a class="navbar-brand" href="#home-anchor">
+    <!-- website logo -->
+    <span class="material-symbols-outlined"> manufacturing </span>
 
-    <!-- This will be the website logo -->
-    <img src=""/>
-    <span>
-      Juan Reyes
-    </span>
+    <span class="header-title"> Juan Reyes Portfolio</span>
   </a>
- 
-  <div class="theme-control">  <!-- This aligns the these to the left-->
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+
+  <!-- This class is the colapsed nav icon, customize later-->
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home-anchor">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me-anchor">About me</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#resume-anchor">Resume</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#experience-anchor">Experience</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#projects-anchor">Projects</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="theme-control">
     @if (this.themeService.themeSignal() === "dark-mode") {
-    <button (click)="toggleTheme()"><span class="material-symbols-outlined"> dark_mode </span></button>
+    <button (click)="toggleTheme()">
+      <span class="material-symbols-outlined"> dark_mode </span>
+    </button>
     } @else {
-    <button (click)="toggleTheme()"><span class="material-symbols-outlined"> wb_sunny </span></button>
+    <button (click)="toggleTheme()">
+      <span class="material-symbols-outlined"> wb_sunny </span>
+    </button>
     }
   </div>
 </div>

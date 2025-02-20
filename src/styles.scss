@@ -1,49 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  // dark-mode colors
+  --text-color-dark: #edeae3;
+  --background-color-dark: #100f0a;
+  --block-color-dark: #1b1a14;
+  --primary-color-dark: #cbc4af;
+  --secondary-color-dark: #57603e;
+  --accent-color-dark: #94a677;
+
+  // light-mode colors
+  --text-color-light: #1c1912;
+  --background-color-light: #f5f4ef;
+  --block-color-light: #eae9e4;
+  --primary-color-light: #504934;
+  --secondary-color-light: #b8c19f;
+  --accent-color-light: #768859;
+
+  // blue-mode colors (testing different styles)
+  // --text-color-dark-blue: #050316;
+  // --background-color-dark-blue: #fbfbfe;
+  // --primary-color-dark-blue: #2f27ce;
+  // --secondary-color-dark-blue: #dddbff;
+  // --accent-color-dark-blue: #443dff;
+}
+
 body {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+
+  // dark header component
+  .header {
+    background-color: var(--background-color-dark);
+    box-shadow: 0 10px 20px var(--background-color-dark);
+    border-bottom: 2px solid var(--block-color-dark);
+    color: var(--text-color-dark);
   }
-  
+
+  .navbar,
+  .navbar-brand,
+  .nav-link {
+    color: var(--text-color-dark);
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color-dark);
+  }
+
   button {
-    padding: 0.3rem 0.5rem;
-    border-radius: 0.5rem;
-  }
-  
-  .dark-mode {
-    background-color: #333;
-    color: #fff;
-  
-    .header {
-      background-color: #444;
-      color: #fff;
-    }
-  
-    button {
-      background-color: #444;
-      color: #fff;
-  
-      &:hover {
-        background-color: #555;
-      }
-    }
-  
-    h1 {
-      color: #fff;
-    }
-  }
-  
-  .light-mode {
-    background-color: #fff;
-    color: #333;
-  
-    .header {
-      background-color: #eaeaea;
-      color: #333;
-    }
-  
-    button {
-      border-color: #d2d2d2;
-      color: gray;
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border-color: black;
+
+    &:hover {
+      background-color: var(--block-color-dark);
     }
   }
 
+  h1 {
+    color: var(--text-color-dark);
+  }
+}
+
+.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+
+  // light header component
+  .header {
+    background-color: var(--background-color-light);
+    box-shadow: 0 10px 20px var(--background-color-light);
+    border-bottom: 2px solid var(--block-color-light);
+    color: var(--text-color-light);
+  }
+
+  .navbar,
+  .navbar-brand,
+  .nav-link {
+    color: var(--text-color-light);
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color-light);
+  }
+
+  button {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    border-color: white;
+
+    &:hover {
+      background-color: var(--block-color-light);
+    }
+  }
+
+  h1 {
+    color: var(--text-color-light);
+  }
+}

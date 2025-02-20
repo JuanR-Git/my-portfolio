@@ -1,9 +1,9 @@
 .header {
+  height: 60px;
+  transition: transform 0.45s, box-shadow 0.45s;
+  padding: 0.5rem 2.2%;
+}
 
-// Handled in bootstrap navbar
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    
-    padding: 0.5rem 2rem;
+.header:hover {
+  transform: scale(1.0035);
 }
