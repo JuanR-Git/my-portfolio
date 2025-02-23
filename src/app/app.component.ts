@@ -17,5 +17,5 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'my-portfolio';
   themeService: ThemeService = inject(ThemeService);
-
+  
 }
