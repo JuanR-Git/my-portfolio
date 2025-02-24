@@ -1,4 +1,24 @@
 .hero {
     padding-top: 60px;
+    padding-bottom: 120px;
     height: 100vh;
+}
+
+.hero-left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-description h1 {
+    font-size: 70px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.hero-description p {
+    font-size: 24px;
+    font-weight: 100;
 }
