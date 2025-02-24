@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
 
+### Libraries Used
+Here is a list of the following libraries I used for this project
+
+- ngx-typed-js
+
 ## Development server
 
 To start a local development server, run:
