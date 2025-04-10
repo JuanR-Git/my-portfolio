@@ -5,12 +5,14 @@ import { AboutMeComponent } from './web-components/about-me/about-me.component';
 import { ExperienceComponent } from './web-components/experience/experience.component';
 import { HeroComponent } from './web-components/hero/hero.component';
 import { ProjectsComponent } from './web-components/projects/projects.component';
+
 import { ThemeService } from './services/theme.service';
 import { CommonModule } from '@angular/common';
+import { ParticlesComponent } from './style-components/particles/particles.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, FooterComponent, HeaderComponent, AboutMeComponent, ExperienceComponent, HeroComponent, ProjectsComponent],
+  imports: [CommonModule, FooterComponent, HeaderComponent, AboutMeComponent, ExperienceComponent, HeroComponent, ProjectsComponent, ParticlesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
