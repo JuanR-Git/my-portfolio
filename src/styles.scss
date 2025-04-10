@@ -35,13 +35,13 @@ button {
 }
 
 .dark-mode {
-  background-color: var(--background-color-dark);
+  background-color: #00000000;
   color: var(--text-color-dark);
 
   // dark header component
   .header {
     background-color: var(--background-color-dark);
-    box-shadow: 0 10px 20px var(--background-color-dark);
+    box-shadow: 0 10px 20px black;
     border-bottom: 2px solid var(--block-color-dark);
     color: var(--text-color-dark);
   }
@@ -69,16 +69,42 @@ button {
   h1 {
     color: var(--text-color-dark);
   }
+
+  p {
+    color: var(--text-color-dark);
+  }
+
+  .hero {
+    background-color: var(--background-color-dark);
+    background: radial-gradient(closest-side,
+       var(--background-color-dark),
+       #00000000
+    );
+  }
+
+  .hero-description p {
+    color: var(--primary-color-dark);
+  }
+
+  .typing {
+    background: linear-gradient(
+      var(--secondary-color-dark),
+      var(--accent-color-dark)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .light-mode {
-  background-color: var(--background-color-light);
+  background-color: #00000000;
   color: var(--text-color-light);
 
   // light header component
   .header {
     background-color: var(--background-color-light);
-    box-shadow: 0 10px 20px var(--background-color-light);
+    box-shadow: 0 10px 20px white;
     border-bottom: 2px solid var(--block-color-light);
     color: var(--text-color-light);
   }
@@ -105,5 +131,31 @@ button {
 
   h1 {
     color: var(--text-color-light);
+  }
+
+  p {
+    color: var(--text-color-light);
+  }
+
+  .hero {
+    background-color: var(--background-color-dark);
+    background: radial-gradient(closest-side,
+       var(--background-color-light),
+       #00000000
+    );
+  }
+
+  .hero-description p {
+    color: var(--primary-color-light);
+  }
+
+  .typing {
+    background: linear-gradient(
+      var(--secondary-color-light),
+      var(--accent-color-light)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
