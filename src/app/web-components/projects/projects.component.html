@@ -1,1 +1,48 @@
-<p>projects works!</p>
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="text-uppercase fw-bold">Projects</h4>
+      <hr class="w-25 mx-auto" />
+      <h2 class="mb-4">What I’ve Been Building.</h2>
+    </div>
+  </div>
+
+  <!-- List of Projects -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      @for (project of this.projects; track project) {
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card mx-2">
+          <img
+            [src]="project.image"
+            class="card-img-top"
+            [alt]="project.title"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <h6 class="card-subtitle py-1">
+              @for (tag of project.tags; track tag) {
+              <span class="badge mx-1" [style.background-color]="tag.color">{{
+                tag.name
+              }}</span>
+              }
+            </h6>
+            <p class="card-text">
+              {{ project.description }}
+            </p>
+          </div>
+          <div class="card-footer">
+            @if (project.docs != '') {
+            <a [href]="project.docs"><i class="fas fa-file-alt icon-link"></i></a>
+            } @if (project.github != '') {
+            <a [href]="project.github"><i class="fab fa-github icon-link"></i></a>
+            }
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

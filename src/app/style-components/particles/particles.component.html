@@ -1,5 +1,13 @@
+@if (themeService.themeSignal() == 'dark-mode') {
 <ngx-particles
   [id]="id"
-  [options]="particlesOptions"
+  [options]="particlesOptionsDark"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
+} @else {
+<ngx-particles
+  [id]="id"
+  [options]="particlesOptionsLight"
+  (particlesLoaded)="particlesLoaded($event)"
+></ngx-particles>
+}

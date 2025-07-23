@@ -1,4 +1,11 @@
+// Allows particles to exted to the entire page 
+:host {
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .content {
-    position: relative;
-    z-index: 1;
-  }
+  position: relative;
+  z-index: 1;
+}

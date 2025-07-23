@@ -1,0 +1,14 @@
+.rounded-2 {
+  height: 400px;
+}
+
+.experience {
+  margin-bottom: 25vh;
+  padding-top: 80px;
+}
+
+@media (max-width: 1440px) {
+  .rounded-2 {
+    max-height: 325px;
+  }
+}

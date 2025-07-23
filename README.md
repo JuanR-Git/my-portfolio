@@ -5,7 +5,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ### Libraries Used
 Here is a list of the following libraries I used for this project
 
-- ngx-typed-js
+- ngx-typed-js (Uncaught TypeError in Chrome's browser)
 
 ## Development server
 

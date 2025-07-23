@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 :root {
   // dark-mode colors
   --text-color-dark: #edeae3;
@@ -24,9 +23,12 @@
   // --accent-color-dark-blue: #443dff;
 }
 
+html,
 body {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
 }
 
 button {
@@ -37,6 +39,29 @@ button {
 .dark-mode {
   background-color: #00000000;
   color: var(--text-color-dark);
+
+  .icon-link {
+    color: var(--primary-color-dark);
+    font-size: 50px;
+  }
+  .icon-link:hover {
+    color: #cce0ac;
+  }
+  .icon-link:active {
+    color: var(--secondary-color-dark);
+  }
+
+  .card {
+    background-color: var(--background-color-dark);
+
+    .card-title {
+      color: var(--text-color-dark);
+    }
+
+    .card-footer {
+      background-color: var(--background-color-dark);
+    }
+  }
 
   // dark header component
   .header {
@@ -57,13 +82,19 @@ button {
   }
 
   button {
-    background-color: var(--background-color-dark);
+    background-color: #ffffff00;
     color: var(--text-color-dark);
-    border-color: black;
+    border-color: var(--text-color-dark);
 
     &:hover {
-      background-color: var(--block-color-dark);
+      background-color: var(--accent-color-dark);
+      border-color: #00000000;
     }
+  }
+
+  .btn-primary:active {
+    background-color: #768859;
+    border-color: #00000000;
   }
 
   h1 {
@@ -72,14 +103,6 @@ button {
 
   p {
     color: var(--text-color-dark);
-  }
-
-  .hero {
-    background-color: var(--background-color-dark);
-    background: radial-gradient(closest-side,
-       var(--background-color-dark),
-       #00000000
-    );
   }
 
   .hero-description p {
@@ -95,16 +118,63 @@ button {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .corner-square {
+    &.top-left {
+      background-color: var(--secondary-color-dark);
+    }
+    &.top-right {
+      background-color: var(--secondary-color-dark);
+    }
+    &.right-middle {
+      background-color: var(--accent-color-dark);
+    }
+    &.top-middle-lg {
+      background-color: var(--text-color-dark);
+    }
+    &.top-middle-sm {
+      background-color: var(--block-color-dark);
+    }
+    &.bottom-left {
+      background-color: var(--accent-color-dark);
+    }
+    &.bottom-right {
+      background-color: var(--primary-color-dark);
+    }
+  }
 }
 
 .light-mode {
   background-color: #00000000;
   color: var(--text-color-light);
 
+  .icon-link {
+    color:  var(--primary-color-light);;
+    font-size: 50px;
+  }
+  .icon-link:hover {
+    color: #cce0ac;
+  }
+  .icon-link:active {
+    color: var(--secondary-color-light);
+  }
+
+  .card {
+    background-color: white;
+
+    .card-title {
+      color: var(--text-color-light);
+    }
+
+    .card-footer {
+      background-color: whitesmoke;
+    }
+  }
+
   // light header component
   .header {
     background-color: var(--background-color-light);
-    box-shadow: 0 10px 20px white;
+    box-shadow: 0 2px 5px rgb(158, 158, 158);
     border-bottom: 2px solid var(--block-color-light);
     color: var(--text-color-light);
   }
@@ -125,8 +195,14 @@ button {
     border-color: white;
 
     &:hover {
-      background-color: var(--block-color-light);
+      background-color: var(--accent-color-light);
+      border-color: #00000000;
     }
+  }
+
+  .btn-primary:active {
+    background-color: #92a86e;
+    border-color: #00000000;
   }
 
   h1 {
@@ -139,9 +215,10 @@ button {
 
   .hero {
     background-color: var(--background-color-dark);
-    background: radial-gradient(closest-side,
-       var(--background-color-light),
-       #00000000
+    background: radial-gradient(
+      closest-side,
+      var(--background-color-light),
+      #00000000
     );
   }
 
@@ -157,5 +234,29 @@ button {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .corner-square {
+    &.top-left {
+      background-color: var(--secondary-color-light);
+    }
+    &.top-right {
+      background-color: var(--secondary-color-light);
+    }
+    &.right-middle {
+      background-color: var(--accent-color-light);
+    }
+    &.top-middle-lg {
+      background-color: var(--text-color-light);
+    }
+    &.top-middle-sm {
+      background-color: var(--block-color-light);
+    }
+    &.bottom-left {
+      background-color: var(--accent-color-light);
+    }
+    &.bottom-right {
+      background-color: var(--primary-color-light);
+    }
   }
 }
