@@ -34,6 +34,18 @@ export class ProjectsComponent {
       docs: 'https://drive.google.com/file/d/1ZIhKlqEDUXXbrAUTR-R1dYmR0VYDw45Z/view?usp=sharing'
     },
     {
+      title: 'Wary',
+      image: '../img/wary.png',
+      description: 'Wary is a web application for anonymously reporting any suspicions within a community or area. I created this in toHacks 2022 learning how to use React to create responsive frontends.',
+      tags: [
+        { name: 'React', color: '#709253ff', textColor: '#fff' }, // Green 5
+        { name: 'Frontend', color: '#8BC34A', textColor: '#fff' }, // Green 3 (same as above)
+        { name: 'Software', color: '#4CAF50', textColor: '#fff' }, // Green 3 (same as above)
+      ],
+      github: 'https://github.com/JuanR-Git/Wary',
+      docs: ''
+    },
+    {
       title: 'Recylce Bot',
       image: '../img/recycleBot.png',
       description:
