@@ -46,7 +46,7 @@ export class ProjectsComponent {
       docs: ''
     },
     {
-      title: 'Recylce Bot',
+      title: 'Recycle Bot',
       image: '../img/recycleBot.png',
       description:
         'Recycle Bot is a Python-based automation system integrating a Roomba and robotic arm to detect, classify, and sort recyclable materials.',

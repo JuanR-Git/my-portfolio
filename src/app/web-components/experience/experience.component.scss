@@ -1,5 +1,7 @@
 .rounded-2 {
-  height: 400px;
+  width: auto;
+  height: 100%;
+  max-height: 400px;
 }
 
 .experience {
@@ -13,6 +15,6 @@
 
 @media (max-width: 1440px) {
   .rounded-2 {
-    max-height: 325px;
+    max-height: 400px;
   }
 }
