@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
 }
 
-button {
+button, .a-button{
   padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
 }
@@ -40,9 +40,14 @@ button {
   background-color: #00000000;
   color: var(--text-color-dark);
 
+    .juan-badge {
+    color: var(--text-color-light);
+    background-color: var(--block-color-light);
+}
+
   .icon-link {
     color: var(--primary-color-dark);
-    font-size: 50px;
+    font-size: 35px;
   }
   .icon-link:hover {
     color: #cce0ac;
@@ -51,15 +56,19 @@ button {
     color: var(--secondary-color-dark);
   }
 
+  .fa-check {
+    color: #cce0ac;;
+  }
+
   .card {
-    background-color: var(--background-color-dark);
+    background-color: #222222a0;
 
     .card-title {
       color: var(--text-color-dark);
     }
 
     .card-footer {
-      background-color: var(--background-color-dark);
+      background-color: #222222;
     }
   }
 
@@ -81,7 +90,7 @@ button {
     color: var(--primary-color-dark);
   }
 
-  button {
+  button, .a-button {
     background-color: #ffffff00;
     color: var(--text-color-dark);
     border-color: var(--text-color-dark);
@@ -148,9 +157,14 @@ button {
   background-color: #00000000;
   color: var(--text-color-light);
 
+  .juan-badge {
+    color: var(--text-color-dark);
+    background-color: var(--block-color-dark);
+}
+
   .icon-link {
     color: var(--primary-color-light);
-    font-size: 50px;
+    font-size: 35px;
   }
   .icon-link:hover {
     color: #cce0ac;
@@ -159,8 +173,12 @@ button {
     color: var(--secondary-color-light);
   }
 
+  .fa-check {
+    color: #92a86e;
+  }
+
   .card {
-    background-color: white;
+    background-color: #ffffffa0;
 
     .card-title {
       color: var(--text-color-light);
@@ -189,14 +207,15 @@ button {
     color: var(--primary-color-light);
   }
 
-  button {
+  button, .a-button {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
-    border-color: white;
+    border-color: black;
 
     &:hover {
       background-color: var(--accent-color-light);
       border-color: #00000000;
+      color: white;
     }
   }
 
@@ -211,15 +230,6 @@ button {
 
   p {
     color: var(--text-color-light);
-  }
-
-  .hero {
-    background-color: var(--background-color-dark);
-    background: radial-gradient(
-      closest-side,
-      var(--background-color-light),
-      #00000000
-    );
   }
 
   .hero-description p {

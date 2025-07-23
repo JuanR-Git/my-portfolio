@@ -3,15 +3,15 @@
     <div class="text-center">
       <h4 class="text-uppercase fw-bold">Experience</h4>
       <hr class="w-25 mx-auto" />
-      <h2 class="mb-4">A Look at My Career Highlights.</h2>
+      <h2 class="pb-5">A Look at My Career Highlights.</h2>
     </div>
 
     <!-- Experiences -->
-    <section id="details" class="details my-5 position-relative">
+    <section class="details my-5 position-relative">
       @for (experience of this.experiences; track experience; let i = $index) {
       @if (this.isEven(i)) {
       <div class="container">
-        <div class="row py-4">
+        <div class="row details-block">
           <div class="col-lg-6 px-5">
             <h2 class="fw-bold">{{ experience.title }}</h2>
             <hr class="hr-heading" />
@@ -22,7 +22,7 @@
             <ul class="list-unstyled lh-lg">
               @for (point of experience.points; track point) {
               <li class="d-flex align-items-center">
-                <i class="fas fa-check mx-3" style="color: #9fda41;"></i>
+                <i class="fas fa-check mx-3"></i>
                 {{ point }}
               </li>
               }
@@ -46,7 +46,7 @@
       </div>
       } @else {
       <div class="container">
-        <div class="row py-4">
+        <div class="row details-block">
           <div class="col-lg-6 px-5">
             <img
               [src]="experience.image"
@@ -65,7 +65,7 @@
             <ul class="list-unstyled lh-lg">
               @for (point of experience.points; track point) {
               <li class="d-flex align-items-center">
-                 <i class="fas fa-check mx-3" style="color: #9fda41;"></i>
+                 <i class="fas fa-check mx-3"></i>
                 <div>
                   {{ point }}
                 </div>

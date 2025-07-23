@@ -31,7 +31,7 @@ export class ParticlesComponent {
 
     background: {
       color: {
-        value: "#111111",
+        value: "#100f0a",
       },
     },
 
@@ -136,7 +136,7 @@ export class ParticlesComponent {
 
     background: {
       color: {
-        value: "#ffffff",
+        value: "#f5f4ef",
       },
     },
 
@@ -212,7 +212,7 @@ export class ParticlesComponent {
           enable: true,
           area: 800,
         },
-        value: 450,
+        value: 250,
       },
       opacity: {
         value: {min: 0.3, max: 0.3},
