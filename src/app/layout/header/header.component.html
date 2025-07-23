@@ -1,57 +1,46 @@
 <div class="navbar navbar-expand-lg header fixed-top">
-  
-  <a class="navbar-brand" href="#home-anchor">
-    <!-- website logo -->
-    <!-- <span class="material-symbols-outlined"> manufacturing </span> -->
+  <div class="container">
+    <a class="navbar-brand" href="#home-anchor">
+      <!-- website logo -->
+      <!-- <span class="material-symbols-outlined"> manufacturing </span> -->
 
-    <span class="header-title"> &lt;Juan Reyes /&gt; </span>
-  </a>
+      <span class="header-title"> &lt;Juan Reyes /&gt; </span>
+    </a>
 
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-
-  <!-- This class is the colapsed nav icon, customize later-->
-    <span class="navbar-toggler-icon"> </span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#hero">Home</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About me</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#experience">Experience</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-    </ul>
-  </div>
-
-
-
-  <div class="theme-control">
-    @if (this.themeService.themeSignal() === "dark-mode") {
-    <button (click)="toggleTheme()">
-      <span class="material-symbols-outlined"> dark_mode </span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <!-- This class is the colapsed nav icon, customize later-->
+      <span class="navbar-toggler-icon"> </span>
     </button>
-    } @else {
-    <button (click)="toggleTheme()">
-      <span class="material-symbols-outlined"> wb_sunny </span>
-    </button>
-    }
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

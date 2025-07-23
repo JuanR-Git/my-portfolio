@@ -31,8 +31,22 @@
             <i class="fab fa-github icon-link"></i>
           </a>
         </div>
-
-        <a href="#about" class="btn btn-lg btn-primary mt-5 a-button px-4">Learn More</a>
+        <div class="d-flex justify-content-center align-items-end gap-3">
+          <a href="#about" class="btn btn-lg btn-primary mt-5 a-button px-5"
+            >Learn More</a
+          >
+          <div class="theme-control">
+            @if (this.themeService.themeSignal() === "dark-mode") {
+            <button (click)="toggleTheme()">
+              <span class="material-symbols-outlined"> dark_mode </span>
+            </button>
+            } @else {
+            <button (click)="toggleTheme()">
+              <span class="material-symbols-outlined"> wb_sunny </span>
+            </button>
+            }
+          </div>
+        </div>
       </div>
     </div>
   </div>

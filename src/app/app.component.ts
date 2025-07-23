@@ -9,10 +9,11 @@ import { ParticlesComponent } from './style-components/particles/particles.compo
 import { AboutMeComponent } from "./web-components/about-me/about-me.component";
 import { ExperienceComponent } from "./web-components/experience/experience.component";
 import { ProjectsComponent } from "./web-components/projects/projects.component";
+import { ContactComponent } from "./web-components/contact/contact.component";
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, FooterComponent, HeaderComponent, HeroComponent, ParticlesComponent, AboutMeComponent, ExperienceComponent, ProjectsComponent],
+  imports: [CommonModule, FooterComponent, HeaderComponent, HeroComponent, ParticlesComponent, AboutMeComponent, ExperienceComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
